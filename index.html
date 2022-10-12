@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>XY Sample Player</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+        <script type="module" src="main.js"></script>
+    </head>
+    <body>
+        <h1>
+            Experience
+            <br/> 
+            Frequency/Playback Rate
+        </h1>
+
+        <p>
+            This page allows a musician to play back an audio sample using a simple <i>xy-pad</i> control.
+            The two-dimensional nature of this interface allows for playful interaction with many aspects of the generated sound.
+        </p>
+
+        <div class="center">
+            <div class="left hide" id="show-frequency">
+                    <div class="keyword">Cutoff Frequency&nbsp;</div>
+                    <div class="tooltip">
+                        <div class="tooltip-bkg">❔</div>
+                        <span class="tooltiptext">The cutoff frequency is not the point at which the filter completely blocks frequencies, but rather the point at which the filter has just begun to take effect</span>
+                </div>
+                <p class="inner" id="frequency"></p>
+            </div>
+            <div class="right hide" id="show-rate">
+                <div class="keyword">Playback Rate&nbsp;</div>
+                <div class="tooltip">
+                    <div class="tooltip-bkg">❔</div>
+                    <span class="tooltiptext">Process of changing the speed or duration of an audio signal without affecting its pitch</span>
+                </div>
+                <p class="inner" id="pct"></p>
+            </div>
+        </div>
+
+        <section class="two_row center">
+            <svg class="xy_pad" id="xy_pad">""
+                <circle cx="50%" cy="50%" r="3" opacity="0.5">
+                </circle>
+                <!-- VERTICAL LINE -->
+                <line class="vr-line" x1="250" y1="0" x2="250" y2="500" stroke="black" />
+                <!-- HORIZONTAL LINE -->
+                <line class="hr-line" x1="0" y1="250" x2="500" y2="250" stroke="black" />
+            </svg>
+            <div class="sample_display">
+                <div class="hide" id="loading_indicator" style="font-weight: 400">
+                    Loading Sample...
+                </div>
+                <div class="hide" id="step_1" style="font-weight: 400">
+                    Hover inside the xy-pad!
+                </div>
+                <div class="hide" id="step_2" style="font-weight: 400">
+                    Press and hold the xy-pad to hear the audio sample ♫
+                </div>
+                <div class="hide" id="step_3" style="font-weight: 400">
+                   Move along the axis to hear changes in playback rate and cutoff frequency.
+                </div>
+            </div>
+        </section>
+
+    </body>
+</html>
