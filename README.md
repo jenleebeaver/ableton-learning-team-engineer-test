@@ -1,5 +1,5 @@
 # ableton-learning-team-engineer-test
-  ##Your task
+  Your task
             Spend no more than three hours making improvements to this page.
             When you've reached the time limit, zip up the entire project folder and send it back to us.
 
@@ -19,7 +19,8 @@
             third-party libraries. If you include a git repository with your submission, we will take a
             look at your commit history.
 
-    ##My Changes
+
+My Changes
 Here I created an interactive Assistant UI to help guide the user through the learning experience:
 
 To find the code associated with the steps search for steps (ie. Step 1) in your code editor.
