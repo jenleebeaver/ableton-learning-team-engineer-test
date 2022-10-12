@@ -28,10 +28,13 @@ Here I created an interactive Assistant UI to help guide the user through the le
 To find the code associated with the steps search for steps (ie. Step 1) in your code editor.
 
 Step 1:
+
 Prompts the user to hover inside the xy-pad. 
 
 Step 2:
+
 Prompts the user to press and hold the xy-pad to hear the audio sample. 
 
 Step 3:
+
 Prompts user to move the pointer along the axis to hear the changes in cutoff frequency and playback rate. Note appearance of tooltips for cutoff frequency and playback rate for further keyword description.
